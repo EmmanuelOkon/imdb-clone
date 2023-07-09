@@ -9,8 +9,8 @@ export default function Header() {
   return (
     <div className="flex items-center justify-between px-2 py-3 sm:p-4 max-w-6xl sm:mx-auto">
       <div className="flex gap-2">
-        <MenuItem title="Home" address="/" Icon={HiHome} />
-        <MenuItem title="About" address="/about" Icon={BsFillInfoSquareFill} />
+        <MenuItem title="HOME" address="/" Icon={HiHome} />
+        <MenuItem title="ABOUT" address="/about" Icon={BsFillInfoSquareFill} />
       </div>
 
       <div className="flex items-center">

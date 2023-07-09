@@ -10,6 +10,7 @@ export default async function Home({ searchParams }) {
     }?api_key=${API_KEY}&language=en-US&page=1`,
     { next: { revalidate: 10000 } }
   );
+  await new Promise((resolve) => setTimeout(resolve, 2000));
 
   if (!res.ok) {
     throw new Error("Failed to fetch data"); // this will be caught by the error page and passed to the page as props
