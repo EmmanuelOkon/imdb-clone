@@ -17,12 +17,12 @@ export default function DarkMode() {
         (currentTheme === "dark" ? (
           <BsFillSunFill
             onClick={() => setTheme("light")}
-            className="text-2xl  hover:text-amber-600"
+            className="text-2xl  hover:text-amber-400"
           />
         ) : (
           <BsMoonFill
             onClick={() => setTheme("dark")}
-            className="text-2xl  hover:text-amber-600"
+            className="text-2xl text-slate-500  hover:text-amber-500"
           />
         ))}
     </div>
