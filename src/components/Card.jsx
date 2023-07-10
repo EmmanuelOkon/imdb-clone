@@ -9,7 +9,8 @@ export default function Card({ result }) {
       <Link className="" href={`/movie/${result.id}`}>
         <Image
           src={`https://image.tmdb.org/t/p/original/${
-            result.backdrop_path || result.poster_path
+            // result.poster_path
+            result.backdrop_path
           }`}
           width={500}
           height={100}
