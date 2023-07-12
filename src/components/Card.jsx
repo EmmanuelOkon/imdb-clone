@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FiThumbsUp } from "react-icons/fi";
 import { BiSolidLike } from "react-icons/bi";
 
 export default function Card({ result }) {
@@ -9,8 +8,7 @@ export default function Card({ result }) {
       <Link className="" href={`/movie/${result.id}`}>
         <Image
           src={`https://image.tmdb.org/t/p/original/${
-            // result.poster_path
-            result.backdrop_path
+            result.poster_path || result.backdrop_path
           }`}
           width={500}
           height={100}
@@ -24,7 +22,7 @@ export default function Card({ result }) {
           alt={result.title}
         ></Image>
         <div className="py-2 px-3 flex flex-col justify-between">
-          <h2 className="truncate text-lg md:text-xl font-bold h-[40px] ">
+          <h2 className="truncate text-[24px] md:text-2xl font-bold text-amber-600">
             {result.title || result.name}
           </h2>
           <p className="line-clamp-3 text-base leading-6 sm:leading-tight md:text-base tracking-tighter leaing-3">
