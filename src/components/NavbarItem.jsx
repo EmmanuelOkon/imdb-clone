@@ -21,12 +21,3 @@ export default function NavbarItem({ title, param }) {
     </div>
   );
 }
-
-{/* <Link
-        className={`-4 hover:text-amber-500 font-semibold pb-2 tracking-wider ${
-          genre && genre === param && " border-b-2 border-b-amber-500 "
-        }`}
-        href={`/?genre=${param}`}
-      >
-        {title}
-      </Link> */}
