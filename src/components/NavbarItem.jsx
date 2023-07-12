@@ -11,8 +11,8 @@ export default function NavbarItem({ title, param }) {
   return (
     <div>
       <Link
-        className={`hoverEffect  pb-2 ${
-          genre && genre === param && "border-b-2 border-b-amber-500"
+        className={`hoveEffect hover:border-b-4 border-b-amber-600 md:text-lg   pb-2 ${
+          genre && genre === param && " border-b-4 text-amber-600 border-b-amber-500 md:font-semibold"
         }`}
         href={`/?genre=${param}`}
       >
